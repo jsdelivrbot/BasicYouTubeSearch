@@ -1,0 +1,6 @@
+{
+  "short_name": "Basic YouTube Search",
+  "name": "Simple interface for searching and viewing YouTube videos",
+  "start_url": "./index.html",
+  "display": "standalone"
+}
