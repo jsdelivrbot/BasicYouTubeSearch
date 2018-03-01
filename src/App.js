@@ -13,9 +13,6 @@ import SearchBar from './components/SearchBar';
 import VideoList from './components/VideoList';
 import VideoDetail from './components/VideoDetail';
 
-/** API Key **/
-const keys = require('./config/keys');
-
 /**
 *   Write a Component to produce some HTML
 */
@@ -37,8 +34,8 @@ class App extends Component {
   videoSearch(term) {
     YTSearch(
       {
-        key: keys.youtubeApiKey,
-        term: term
+        key: process.env.REACT_APP_YOUTUBE_API_KEY,
+        term
       },
       (videos) => {
         this.setState({
